@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/text_color"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:text="Weather Watch" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Enter City Name"
+            android:inputType="textPersonName"
+            android:background="@drawable/edit_text_background"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/hint_text_color"
+            android:padding="25dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:textColor="@color/button_text_color"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Show Weather"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="100dp"
+            android:onClick="getWeatherDetails"/>
+
+        <TextView
+            android:id="@+id/etResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="50dp"
+            android:padding="16dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:lineSpacingExtra="4dp"
+            android:gravity="start"
+            android:maxLines="10"
+            android:ellipsize="end"
+            android:textColor="@color/ic_launcher_background" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
